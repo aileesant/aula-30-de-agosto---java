@@ -1,23 +1,15 @@
 package org.example;
 
-import java.util.Scanner;
+import java.util.ArrayList;
 
-public class Vetores2 {
-    public static void main(String[] args) {
+public class Lista {
 
-        //nao precisa falar quantas vezes precisa repetir
-        Scanner ler = new Scanner(System.in);
-        double[] notas = new double[2];
+    ArrayList<Double> notas = new ArrayList<>();
 
-        for (int i = 0; i < 2; i++) {
-            System.out.println("Digite a " + (i + 1) + "nota: ");
-            notas[i] = ler.nextDouble();
-        }
+        notas.add(10.0);
+        notas.add(8.0);
 
-        System.out.println("\nExibindo as notas: ");
-        for (double nota : notas) {
-            System.out.println("Nota: " + nota);
-        }
-        ler.close();
+        for (double nota: notas){
+        System.out.println("Nota: " + nota);
     }
 }
